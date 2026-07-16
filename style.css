@@ -220,30 +220,72 @@
             font-size: 0.9rem;
         }
 
-        /* for Mobile */
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 15px 5%;
-                flex-direction: column;
-                text-align: center;
-            }
-            .navbar ul {
-               gap: 10px;
-            }
+        /* --- Media Queries for Tablets & Mobile --- */
 
-            .navbar h2 {
-                margin-bottom: 10px;
+            @media (max-width: 992px) {
+                section {
+                    padding: 90px 5% 60px 5%;
+                }
+                
+                .home h2 {
+                    font-size: 2.8rem;
+                }
             }
-
-            .navbar a {
-                font-size: 0.85rem;
+            
+            @media (max-width: 768px) {
+                .navbar {
+                    padding: 15px 5%;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            
+                .navbar ul {
+                    gap: 20px;
+                }
+            
+                .navbar h2 {
+                    font-size: 1.4rem;
+                }
+            
+                .navbar a {
+                    font-size: 0.9rem;
+                }
+            
+                section {
+                    padding: 120px 5% 50px 5%;
+                }
+            
+                section h2 {
+                    font-size: 2rem;
+                }
+            
+                .home h2 {
+                    font-size: 2.2rem;
+                }
+            
+                .home p, .about p {
+                    font-size: 1rem;
+                }
+            
+                .contact form {
+                    padding: 30px 20px;
+                }
             }
-
-            .home h2{
-                font-size: 2.3rem;
+            
+            @media (max-width: 480px) {
+                .navbar ul {
+                    gap: 15px;
+                }
+            
+                .navbar a {
+                    font-size: 0.8rem;
+                }
+            
+                .home h2 {
+                    font-size: 1.8rem;
+                }
+            
+                section h2 {
+                    font-size: 1.75rem;
+                }
             }
-            section{
-                padding: 60px 5%;
-                text-align: center;
-            }
-        }

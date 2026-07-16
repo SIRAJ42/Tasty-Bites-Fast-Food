@@ -220,11 +220,12 @@
             font-size: 0.9rem;
         }
 
-        /* --- Media Queries for Tablets & Mobile --- */
-
+            /* --- Responsive Breakpoints --- */
+            
+            /* Tablets (landscape/portrait) */
             @media (max-width: 992px) {
                 section {
-                    padding: 90px 5% 60px 5%;
+                    padding: 110px 5% 60px 5%;
                 }
                 
                 .home h2 {
@@ -232,6 +233,7 @@
                 }
             }
             
+            /* Mobile Screens (768px down to 481px) */
             @media (max-width: 768px) {
                 .navbar {
                     padding: 15px 5%;
@@ -247,12 +249,8 @@
                     font-size: 1.4rem;
                 }
             
-                .navbar a {
-                    font-size: 0.9rem;
-                }
-            
                 section {
-                    padding: 120px 5% 50px 5%;
+                    padding: 140px 5% 50px 5%;
                 }
             
                 section h2 {
@@ -266,15 +264,18 @@
                 .home p, .about p {
                     font-size: 1rem;
                 }
-            
-                .contact form {
-                    padding: 30px 20px;
-                }
             }
             
+            /* Tiny Mobile Screens (Below 480px) */
             @media (max-width: 480px) {
+                .navbar {
+                    padding: 10px 4%;
+                }
+            
                 .navbar ul {
-                    gap: 15px;
+                    gap: 12px;
+                    flex-wrap: wrap; 
+                    justify-content: center;
                 }
             
                 .navbar a {
@@ -282,10 +283,28 @@
                 }
             
                 .home h2 {
-                    font-size: 1.8rem;
+                    font-size: 1.75rem;
                 }
             
                 section h2 {
-                    font-size: 1.75rem;
+                    font-size: 1.6rem;
+                }
+            
+                .container {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+            
+                .card {
+                    padding: 15px;
+                }
+            
+                .card img {
+                    height: 180px; 
+                }
+            
+                .contact form {
+                    padding: 20px 15px;
+                    max-width: 100%;
                 }
             }
